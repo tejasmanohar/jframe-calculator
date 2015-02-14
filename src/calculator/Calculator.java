@@ -9,14 +9,19 @@ public class Calculator extends JFrame implements ActionListener {
 	JButton[] button = new JButton[19];
 	String[] buttonString = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2",
 			"3", "*", ".", "/", "C", "√", "+/-", "=", "0" };
+	
 	int[] dimW = { 300, 45, 100, 90 };
 	int[] dimH = { 35, 40 };
+	
 	Dimension displayDimension = new Dimension(dimW[0], dimH[0]);
 	Dimension regularDimension = new Dimension(dimW[1], dimH[1]);
 	Dimension rColumnDimension = new Dimension(dimW[2], dimH[1]);
 	Dimension zeroButDimension = new Dimension(dimW[3], dimH[1]);
+	
 	boolean[] function = new boolean[4];
+	
 	double[] temp = { 0, 0 };
+	
 	JTextArea display = new JTextArea(1, 20);
 	Font font = new Font("Times new Roman", Font.BOLD, 14);
 
